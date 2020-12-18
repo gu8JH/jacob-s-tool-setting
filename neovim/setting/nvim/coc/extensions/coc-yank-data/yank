@@ -1,0 +1,1018 @@
+9f3c90dcd630c8c56eef6ecfad3c30ba|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1328|1|V|cpp
+	      fdmt2::NibblePath path{nibble_path_str};
+4ff0b633557a9719e7a920f8c365ea46|file:///root/workspace/pamir-framework/pamir/letus/merkle_index.cc|40|1|V|cpp
+	#if 1
+	  std::cout << "Put key hash=" << write_context.key_hash.ToHex() << std::endl;
+	#endif
+b671712df6d99554be0985754f3b68a6|file:///root/workspace/pamir-framework/pamir/letus/merkle_index.cc|59|1|V|cpp
+	#if 1
+	  std::cout << "Get key hash=" << write_context.key_hash.ToHex() << std::endl;
+	#endif
+37afefa16a692dca0b9e00e07b8ee46c|file:///root/workspace/pamir-framework/pamir/letus/merkle_index.cc|79|35|v|cpp
+	write_context
+3b10ecf4d8cf2262e19de588cdf1fce0|file:///root/.config/nvim/config/plugins/vim-airline.vim|3|1|V|vim
+	let g:airline#extensions#tabline#enabled = 1      "tabline中当前buffer两端的分隔字符
+	" let g:airline#extensions#tabline#left_sep = ' '   "tabline中未激活buffer两端的分隔字符
+	" let g:airline#extensions#tabline#left_alt_sep = '|'      "tabline中buffer显示编号
+	" let g:airline#extensions#tabline#buffer_nr_show = 1
+b7b530e169f45c731ed327198d8b690b|file:///root/.config/nvim/config/plugins/vim-airline.vim|3|1|v|vim
+	let 
+3be8ddd783fbe64565cb1633a8afff6e|file:///root/.config/nvim/config/plugins/vim-airline.vim|3|51|v|vim
+	"tabline中当前buffer两端的分隔字符
+	" let g:airline#extensions#tabline#left_sep = ' '   "tabline中未激活buffer两端的分隔字符
+	" let g:airline#extensions#tabline#left_alt_sep = '|'      "tabline中buffer显示编号
+	" let g:airline#extensions#tabline#buffer_nr_show = 1
+8b348c4272a3603f22aa893657a29077|file:///root/.config/nvim/config/plugins/vim-airline.vim|2|1|V|vim
+	" 开启tabline
+d45d9013f6937012258cd3351c730393|file:///root/.config/nvim/config/plug.vim|31|1|V|vim
+	Plug 'vim-airline/vim-airline'
+cf8e96b81df5e480c01097fe221777bb|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|429|58|v|cpp
+	 node_slot->data_version;
+72f758e2bf3e98ca617a83a77411ebc2|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|434|3|v|cpp
+	for (int i = 0; i < kInternalSlotCount; ++i){
+5d4452a136593758767c43af49c77c28|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|429|1|V|cpp
+	  new_internal_node->node_slots[slot_idx].data_version  = node_slot->data_version;
+	  new_internal_node->node_slots[slot_idx].hash          = node_slot->hash;
+	  new_internal_node->node_slots[slot_idx].child         = std::move(node_slot->child);
+e506fc706c28a2b90a01bccdc102c938|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|435|3|V|cpp
+	      continue;
+884786e67ef15c3d5231be3f9b9ade37|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|432|1|V|cpp
+	  new_internal_node->node_slots[slot_idx].data_version  = node_slot->data_version;
+fb68c1af98938a9465b06c1118c3b508|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|433|1|V|cpp
+	  new_internal_node->node_slots[slot_idx].hash          = node_slot->hash;
+	  new_internal_node->node_slots[slot_idx].child         = std::move(node_slot->child);
+bf9caf8fbc38e3a018a7a1249a08c594|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|436|37|v|cpp
+	slot_idx
+b6955bddca970dea6d85fe189e79c094|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|828|1|V|cpp
+	TEST_F(MerkleIndexTest, ReadWrite_Delete) {
+	  FLAGS_TEST_merkle_index_test_delete_ratio = 5.5;
+	  FLAGS_DEBUG_letus_enable_merkle_index_split = false;
+	  TestReadWrite();
+	}
+6946dc55d293f0207f6f36aa04a43536|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|1|V|cpp
+	  std::string key1 = "key1";
+	  key1.resize(32);
+	  uint64_t start_version = 0;
+	  std::cout << "==> Start Put0" << std::endl;
+	  TestWhiteBoxTestingPut(start_version, key1, "value1");
+	  std::cout << "==> Start Commit0" << std::endl;
+	  TestMerkleWhiteBoxTestCommit(start_version);
+4a6e49a35dca45d88aa8d1480e04d9e2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|950|1|V|cpp
+	  FLAGS_TEST_merkle_index_test_delete_ratio = 5.5;
+	  FLAGS_DEBUG_letus_enable_merkle_index_split = false;
+782872bce63985ef913968029c1ce498|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|950|3|V|cpp
+	  TestReadWrite();
+c38fdb141d0193555e491dfe1fad5d77|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|949|25|v|cpp
+	ReadWrite_InsertAfterDeleteAll
+f5263651c1881e4cd3fd4839f8a6b923|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|953|3|V|cpp
+	  std::cout << "==> Start Put0" << std::endl;
+9050ca044c929f8b6c381a3560acfd34|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|954|3|V|cpp
+	  std::cout << "==> Start Commit0" << std::endl;
+6eb7417b7052b1417daab39fafbef27b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|952|3|V|cpp
+	  uint64_t start_version = 0;
+6cd33b12ed9cd702ffe3b69855b4adc5|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|953|1|V|cpp
+	  TestWhiteBoxTestingPut(start_version, key1, "value1");
+05579a730ca2a211cdbd602ab884251e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|951|1|V|cpp
+	  std::string key1 = "key1";
+874f0bdaa20cac93948acdcc95a14d5b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|953|1|V|cpp
+	  key1.resize(32);
+1372ad6e48747beb98055beeb052c6b5|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1039|1|V|cpp
+	  TestWhiteBoxTestingDel(start_version, key1);
+d117dcf554ff8896603783489ea47e19|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|177|1|V|cpp
+	        std::string key = IndexToString(j);
+	        std::string value;
+	        FillRandom(&value, value_len);
+2dc59802ebec7ba26ea96c30f93aff19|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|180|1|V|cpp
+	        if (!FLAGS_TEST_only_check_simple_merkle_tree) {
+	          ASSERT_OK(SyncPut(data_version, key, value));
+	        }
+	        expect->Put(data_version, key, value);
+b7bfa118c2e981a4a69cf2cb8aeb35e2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|956|9|V|cpp
+	        if (!FLAGS_TEST_only_check_simple_merkle_tree) {
+4e1ddba1c31545ee09fb38ae1fd79346|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|957|9|V|cpp
+	        }
+a5104052c9db9d2fc4c33d57a3a69e9b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|959|1|V|cpp
+	  std::string key1 = "key1";
+	  std::string key2 = "key2";
+	  key1.resize(32);
+	  key2.resize(32);
+c1b5c5384d012751af02efc99332eba9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|952|1|V|cpp
+	  for (int i = 0; i < 2; i++) {
+	    std::string key = IndexToString(i);
+	    std::string value;
+	    FillRandom(&value, value_len);
+	    ASSERT_OK(SyncPut(data_version, key, value));
+	    expect->Put(data_version, key, value);
+	  }
+5a6b3095357aba057c46884d8cd6a13f|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|960|1|V|cpp
+	  // delete all
+	  for (int i = 0; i < 2; i++) {
+	    std::string key = IndexToString(i);
+	    std::string value;
+	    FillRandom(&value, value_len);
+	    ASSERT_OK(SyncPut(data_version, key, value));
+	    expect->Put(data_version, key, value);
+	  }
+db3af90204e25fdeb07a6f4a3d037723|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|970|3|V|cpp
+	  // delete all
+094de59f28c35bbc2437991b23b3a71b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|977|1|V|cpp
+	  TestWhiteBoxTestingPut(start_version, key1, "value1");
+	  TestWhiteBoxTestingPut(start_version, key2, "value2");
+	
+	  TestWhiteBoxTestingDel(start_version, key1);
+	  TestWhiteBoxTestingDel(start_version, key2);
+	
+	  TestWhiteBoxTestingPut(start_version, key1, "value1");
+	  TestMerkleWhiteBoxTestCommit(start_version);
+1f9417af8e4947ab988e6bc820f70d00|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|391|1|V|cpp
+	    std::unique_ptr<MultiVersionMap> expect =
+	        CreateMultiVersionMap(static_cast<MultiVersionMapType>(
+	            FLAGS_TEST_merkle_index_test_expect_map_type));
+6730c38e77afe79f3636ff11d3ddb498|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|969|40|v|cpp
+	, value
+1a0f4edcc098110b155e876381c0f0a8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|968|5|V|cpp
+	    FillRandom(&value, value_len);
+621be8d0574fa413d1b6f70dcc582b7a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|967|5|V|cpp
+	    std::string value;
+1fdb5e20e4a2a6af3654e71ac3ff355c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|3|V|cpp
+	  //
+3e892136eb8799d94cdae4941b20df2c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|243|1|V|cpp
+	  void VerifyTestKVData(uint32_t test_count, MultiVersionMap* expect,
+	                        double verify_current_ratio,
+	                        double verify_history_ratio) {
+9ffb2115463619796bcc624f580427c8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|20|v|cpp
+	uint32_t test_count
+5dff8cd921dba3cb5bb38313778a804e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|23|v|cpp
+	MultiVersionMap
+b4cf6e41b6a544140dba543e3a84196e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|31|v|cpp
+	verify_current_ratio
+613bb76faff9d5725812bc471b384c52|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|36|v|cpp
+	verify_history_ratio
+1fead58f8c3623579aa4557465e50d13|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|950|12|v|cpp
+	start_version
+2c17c6393771ee3048ae34d6b380c5ec|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|313|2|v|cpp
+	private
+01b70e086e911bea9fe428ab00cf98ee|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|962|5|V|cpp
+	    expect->Put(data_version, key, value);
+3f8ebd303583d94adfd1b441300bf4d3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|961|1|V|cpp
+	    TestMerkleWhiteBoxTestingPut(data_version, key, value));
+4e060157aaea7cf9e5d0eee522f35636|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|967|1|V|cpp
+	    ASSERT_OK(SyncDel(data_version, key));
+	    expect->del(data_version, key);
+02be6e01480796b8e5da7bd6746edf67|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|974|1|V|cpp
+	    ASSERT_OK(SyncPut(data_version, key, value));
+	    expect->Put(data_version, key, value);
+ca19742f6cfd6c1d4e6fec2a598b16ec|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|331|1|V|cpp
+	  void finishVersion(DataVersion* data_version, MultiVersionMap* expect) {
+	    expect->Commit(*data_version);
+	    fdmt2::NibbleHash actual_root_hash;
+	    bool hash_ok = false;
+	    if (!FLAGS_TEST_only_check_simple_merkle_tree) {
+	      EXPECT_OK(SyncCommit(*data_version, &actual_root_hash));
+	      EXPECT_OK(SyncPreparePages(*data_version));
+	    }
+	    if (!FLAGS_TEST_only_check_simple_merkle_tree &&
+	        FLAGS_TEST_verify_root_hash) {
+	      MACRO_ASSERT(expect->type() == MultiVersionMapType::kDoubleWrite ||
+	                   expect->type() == MultiVersionMapType::kMerkle);
+	      auto expect_root_hash = expect->GetRootHash(*data_version);
+	      hash_ok = expect_root_hash == actual_root_hash;
+	      EXPECT_EQ(expect_root_hash, actual_root_hash);
+	      MACRO_ASSERT(hash_ok);
+	    }
+	
+	    if (*data_version < 10 || *data_version % 50 == 0) {
+	      std::cout << "Commit and PreparePages Success,"
+	                << "\tversion:" << *data_version
+	                << "\troot_hash_verify:" << (hash_ok ? "pass" : "ignore")
+	                << std::endl;
+	    }
+	
+	    (*data_version)++;
+	  }
+a2ac00a96a91e39a54b716b783cde273|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|467|22|v|cpp
+	int test_count
+586af9192c0228a6ce6a8d625a68a0cd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|467|47|v|cpp
+	double 
+86ee2ba55aa03b06900298d3c1884440|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|466|34|v|cpp
+	int 
+524281e16ae60dfbf74c73b7a2ec1312|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|983|3|V|cpp
+	  finishVersion(&data_version, expect);
+f21764138e13546cdad3e67e2f1c83b7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|4|V|cpp
+	    TestMerkleWhiteBoxTestDel(data_version, key));
+c2add694bf942dc77b376592d9c862cd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|42|v|cpp
+	key1
+970cf3845930190bb86a153af8749eeb|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|958|44|V|cpp
+	  std::unique_ptr<MultiVersionMap> expect =
+	      CreateMultiVersionMap(static_cast<MultiVersionMapType>(
+	          FLAGS_TEST_merkle_index_test_expect_map_type)));
+9a98fcdecdcab5747bae7560676ac319|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|978|1|V|cpp
+	  TestMerkleWhiteBoxTestCommit(data_version);
+9ae018237329e237051ff9ffd46c94dc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|977|1|V|cpp
+	  // commit
+	  TestMerkleWhiteBoxTestCommit(data_version);
+c57cafd17178793e545509f4db1229ea|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|555|1|V|cpp
+	  std::unique_ptr<MultiVersionMap> expect_{};
+6d88b5cf4d159a50b56c5c0a3560d12e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|561|36|v|cpp
+	expect_
+f557e4b552bd2e2b042079c49b27a8fc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|152|45|v|cpp
+	MultiVersionMap* expect
+6e578ced8620311c061ee588b4a74f67|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|557|18|v|cpp
+	expect
+a24a31176d79396952fb29ab9503d4fc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|977|1|V|cpp
+	  TestVerifyTestKVData(4, 1.0, 1.0);
+a0337dc0fe1ff64ee720cd19564a7442|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|470|1|V|cpp
+	    merkle_index_helper.SyncPut(data_version, key, value);
+62f8427c8e1b9c1dc6b13af7be65a587|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|465|25|v|cpp
+	SyncPut
+f8307b89085d3445cb053201a2fcd284|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|466|22|v|cpp
+	uint32_t test_count, MultiVersionMap* expect,
+	                        double verify_current_ratio,
+	                        double verify_history_ratio
+55e074b95f6f401fee706cd40d392534|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|464|45|v|cpp
+	MultiVersionMap* expect,
+18d120dcfc1e16b0bdc267ac80390eca|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|464|101|v|cpp
+	4, 1.0, 1.0
+03efe277744c2fe25c1b234c40a70bfc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|465|25|v|cpp
+	VerifyTestKVData(data_version, key, value);
+8fad8404e2d7cfe4d510ffa011f1d77c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|465|106|v|cpp
+	 double 
+5dfbd6eff5c1f986c25fa49a6d36b842|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|465|42|v|cpp
+	uint32_t
+b32a08361ba95296c41b34c156c927c8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|442|1|V|cpp
+	<<<<<<< HEAD
+	 protected:
+	=======
+ef57627eac74fac8e393ef04d3c4539c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|522|1|V|cpp
+	>>>>>>> refactor the no kv test
+619a1dff3951ec2a05aa2fad21c3d3b2|file:///root/workspace/pamir-framework/pamir/letus/fdmt/page.h|592|4|V|cpp
+	=======
+	    MACRO_ASSERT(version != INVALID_DATA_VERSION);
+	    root_node_slot_.data_version = version;
+	    root_node_slot_.hash = hash;
+	    root_node_slot_.child = std::move(node);
+	>>>>>>> update MerkleIndexTest white box case
+697dfb9b235783676b63d2f1ed07cad5|file:///root/workspace/pamir-framework/pamir/letus/fdmt/page.h|589|1|V|cpp
+	<<<<<<< HEAD
+b528740959d3a94f94f01ec19db7cad0|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|967|1|V|cpp
+	  TestMerkleWhiteBoxTestFlush(data_version);
+b827446b5e7d61f1db60b15e300d645a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|984|3|V|cpp
+	  data_version++;
+9d501e4aa8cd86b335711d6c6b0700cf|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|958|1|V|cpp
+	  // put
+	  for (int i = 0; i < 2; i++) {
+	    std::string key = IndexToString(i);
+	    std::string value;
+	    FillRandom(&value, value_len);
+	    TestWhiteBoxTestingPut(data_version, key, value);
+	  }
+f5df6c57cfd3bb16dcbf16516f015184|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|984|3|V|cpp
+	  // check
+e2912ebc2e582907b2ec9b2b7ec8d718|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|959|3|V|cpp
+	  for (int i = 0; i < 2; i++) {
+9f0b705bf7dfd0c3998bac591c92ace5|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|971|3|V|cpp
+	  for (int i = 2; i < 4; i++) {
+7fa6cdb6a0e77371b402d3ee2fb246a6|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|980|3|V|cpp
+	  for (int i = 4; i < 6; i++) {
+502889bf338e4e434228c37734f058f9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|981|1|V|cpp
+	  std::string value;
+20cdd879f4dcfb6fb4d7de18d7e464ff|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|980|3|v|cpp
+	string 
+9c9fed37349c17d51fc3830227bbc7f0|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|3|v|cpp
+	std::
+a0ad0793deb139996336570fafc769c9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|960|20|v|cpp
+	;
+	  FillRandom(&value, value_len);
+	  TestWhiteBoxTestingPut(data_version, key, value);
+	  // commit
+	  TestMerkleWhiteBoxTestCommit(data_version);
+	  TestMerkleWhiteBoxTestFlush(data_version);
+	  data_version++;
+	  // delete all
+	  std::string key = IndexToString(0);
+	  TestWhiteBoxTestingDel(data_version, key);
+	  // put
+	  s
+49b15852b01c5e9796aef01404aeed97|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|968|1|v|cpp
+	  std::strin
+a64265a9ba9c756e39841b5dafb10666|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|968|3|v|cpp
+	std::string 
+ad46ca585979d2b51f199b7cec55ee42|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|3|V|cpp
+	  value;
+55d8e804d848f630b19142663a3ec81a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|960|23|v|cpp
+	IndexToString
+5ef51654f727e4a30c63f6d13007fa65|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|960|5|V|cpp
+	    std::string key = "key1";
+d5b3c0283ecddbddddec650241b52d34|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|960|1|V|cpp
+	    fdmt2::NibbleHash key();
+	    key[0] = i;
+c85983c182e049d2e24ff5202073f01a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|5|V|cpp
+	    std::string key = IndexToString(i);
+7c78b8e10e89c8023d22732434f800ce|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|972|1|V|cpp
+	    fdmt2::NibbleHash key();
+	    key[0] = i;
+	    TestWhiteBoxTestingDel(data_version, key.ToString());
+eeb5a1660b2bcb8e95ed099d6074bba2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|962|5|V|cpp
+	    std::string value = "value";
+85f98353f114f871fc8e1dc7ba95d44e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|980|5|V|cpp
+	    TestWhiteBoxTestingPut(data_version, key, value);
+e9474092a56a7ab631356b7a76eb17fd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|979|5|V|cpp
+	    TestWhiteBoxTestingDel(data_version, key.ToString());
+8884e1ff6abd559c0fa22b2ddebf2383|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|987|1|V|cpp
+	    std::string key = IndexToString(i);
+	    std::string value;
+0d03e8ef567a4382255763667be521fd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|957|3|V|cpp
+	  uint64_t value_len = 128;
+1190e3da2f4ba050ed5c839aac52e0dc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|961|5|V|cpp
+	    key[0] = i;
+41e34d5fecc41dc12d57da9815a4a164|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|961|1|V|cpp
+	    key.SetNibble(0,i);
+0e8ea60799d8a11b40db6b0456e8cbfe|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|977|1|V|cpp
+	    key.SetNibble(0, i);
+30a19ffc1d042969f4b7a1c24a07e282|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1006|1|V|cpp
+	  FLAGS_DEBUG_letus_disable_key_hash = true;
+e705826f0fbb9896deb8c61811d542a2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|550|1|V|cpp
+	  void TestMerkleWhiteBoxTestVerifyKVs(const std::map<std::string, std::string>& expect_kvs) {
+	  }
+5f58267060fd844c2db9cc6811cca43a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|541|39|v|cpp
+	const std::map<std::string, std::string>& expect_kvs
+2646cc2c3da4b64de5f743a3681b897e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|292|1|V|cpp
+	    std::string value_expect;
+	    auto exist = expect->Get(data_version, key, &value_expect);
+	    if (!FLAGS_TEST_only_check_simple_merkle_tree) {
+	      Status s;
+	      s = SyncGet(data_version, key, exist, value_expect,
+	          if_expect_get_value_hit,
+	          /** if_expect_value_hash **/ expect->IsCommittedVersion(data_version));
+	      if (!exist) {
+	        EXPECT_ERROR(ERRNO_MERKLESTATE_NOT_FOUND, s.Code());
+	        MACRO_ASSERT(ERRNO_MERKLESTATE_NOT_FOUND == s.Code());
+	      } else {
+	        EXPECT_OK(s);
+	        // if return ERRNO_ITEM_NOT_EXIST, data is lost;
+	        MACRO_ASSERT(s != ERRNO_ITEM_NOT_EXIST &&
+	                     s != ERRNO_MERKLESTATE_NOT_FOUND);
+	      }
+	    }
+468b5b0892c7ab46b5f75945426a608e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|544|5|V|cpp
+	    if (!FLAGS_TEST_only_check_simple_merkle_tree) {
+ea5a1cbe764918679997181a3ea281d3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|557|5|V|cpp
+	    }
+5f07af6ff34449f96cd42530e6063110|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|545|49|v|cpp
+	if_expect_get_value_hit
+1cc5804f5e411fe68b00c456a211e9cc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|541|8|v|cpp
+	TestMerkleWhiteBoxTestVerifyKV
+e187c76a99a6f47e8fd7e084dacac1c7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1008|3|V|cpp
+	  TestVerifyTestKVData(6, 1.0, 1.0);
+f8bb2172169e093020d7449cf56402b7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|987|1|V|cpp
+	    fdmt2::NibbleHash key;
+c67b5f61bc45318a57a016def615c684|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1142|1|V|cpp
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+5bb10e652e278b1c2cae70cabc55b730|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1142|1|V|cpp
+	#if 1
+	  // TODO(gjh): tmp fix for history read make node_slot_count bigger
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      59 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+	#else
+b5e6657fc0a5a11c0a9c4a2ad00428b1|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1207|1|V|cpp
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 2 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+9029a18c8c3e2c2b1a6721189db64a0b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1198|1|V|cpp
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      59 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+1f9e480cf75a8769c317bfc83231287b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1195|1|V|cpp
+	#if 1
+	  // TODO(gjh): tmp fix for history read make node_slot_count bigger
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 2 /*mutable_version_count*/,
+	      59 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+	#else
+77086279539deaf81fe5b3d41be55970|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1255|1|V|cpp
+	      start_version /*version*/, 15 /*internal_node_count*/,
+	      30 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      15 /*mem_internal_node_count*/, 30 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+e4dfd209acf4a91695b3abb0207f3eb2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1247|1|V|cpp
+	      2 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      4 /*mem_internal_node_count*/, 2 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 2 /*mutable_version_count*/,
+	      59 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      2 /*mutable_leaf_node_count*/);
+81cbf7cb927000459bf835b68523c426|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1243|1|V|cpp
+	#if 1
+	  // TODO(gjh): tmp fix for history read make node_slot_count bigger
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      start_version /*version*/, 15 /*internal_node_count*/,
+	      30 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      15 /*mem_internal_node_count*/, 30 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      196 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+	#else
+6129e8a5d74dcf6346f34b489ef4e371|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1286|1|V|cpp
+	      start_version /*version*/, 17 /*internal_node_count*/,
+	      32 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      17 /*mem_internal_node_count*/, 32 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+a62dc00aafa4f4c5e075fd64e415b452|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1276|1|V|cpp
+	      start_version /*version*/, 4 /*internal_node_count*/,
+	      start_version /*version*/, 15 /*internal_node_count*/,
+	      30 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      15 /*mem_internal_node_count*/, 30 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      196 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+ae302b5ca6e41286dca5eed1412017d1|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1246|1|V|cpp
+	      start_version /*version*/, 4 /*internal_node_count*/,
+55f79e5573ea771ee6aadfbff99cf163|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1272|1|V|cpp
+	#if 1
+	  // TODO(gjh): tmp fix for history read make node_slot_count bigger
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 17 /*internal_node_count*/,
+	      32 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      17 /*mem_internal_node_count*/, 32 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      196 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+	#else
+70e780b07070cd3f4669e13288467ec8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1369|1|V|cpp
+	      start_version /*version*/, 16 /*internal_node_count*/,
+	      31 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      0 /*base_page_count*/, 0 /*delta_page_count*/,
+	      16 /*mem_internal_node_count*/, 31 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      0 /*mutable_leaf_node_count*/);
+5c8c9dd63153cdfaad092b6f1a9a2f91|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1360|1|V|cpp
+	      start_version /*version*/, 17 /*internal_node_count*/,
+	      32 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      17 /*mem_internal_node_count*/, 32 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      196 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      30 /*mutable_leaf_node_count*/);
+65d3f3f1d8656fad7f4317903687ef17|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1357|1|V|cpp
+	#if 1
+	  // TODO(gjh): tmp fix for history read make node_slot_count bigger
+	  TestMerkleWhiteBoxTestVerifyRootPageStat(
+	      start_version /*version*/, 16 /*internal_node_count*/,
+	      31 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      0 /*base_page_count*/, 0 /*delta_page_count*/,
+	      16 /*mem_internal_node_count*/, 31 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	      210 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      0 /*mutable_leaf_node_count*/);
+	#else
+8c74e079281b39033015f25b21285fcc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1409|1|V|cpp
+	      start_version /*version*/, 34 /*internal_node_count*/,
+	      63 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      34 /*mem_internal_node_count*/, 63 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      31 /*mutable_leaf_node_count*/);
+1b4728e979392fb850dc8460213eb651|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1400|1|V|cpp
+	      start_version /*version*/, 16 /*internal_node_count*/,
+	      31 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      0 /*base_page_count*/, 0 /*delta_page_count*/,
+	      16 /*mem_internal_node_count*/, 31 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	      210 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      0 /*mutable_leaf_node_count*/);
+f2ee5aca71a929254acb780763f41937|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1365|1|V|cpp
+	#endif
+d7ea7cb336cafad4cd13704dc3ef10fe|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1379|1|V|cpp
+	      start_version /*version*/, 16 /*internal_node_count*/,
+	      31 /*leaf_node_count*/, 1 /*logical_page_count*/, 1 /*mem_page_count*/,
+	      1 /*base_page_count*/, 0 /*delta_page_count*/,
+	      16 /*mem_internal_node_count*/, 31 /*mem_leaf_node_count*/,
+	      0 /*mem_page_slot_count*/, 1 /*mutable_version_count*/,
+	      0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	      31 /*mutable_leaf_node_count*/);
+f4bda5af8a1a3f1a7b4e7eb27306b049|file:///root/.config/nvim/config/plug.vim|29|1|V|vim
+	Plug 'srcery-colors/srcery-vim'
+cca1ae28862cf535257fd2b0c6a66186|file:///root/.config/nvim/config/theme.vim|3|13|v|vim
+	palenight
+5145623c324afa38a62579d000b5b766|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|975|1|V|cpp
+	<<<<<<< HEAD
+	=======
+52d195da4d2e27f8245978602ab7c2ac|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1020|1|V|cpp
+	>>>>>>> 897a7df2... fix key
+47f8b009adab608aea158c2475ef53b7|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|429|1|V|cpp
+	<<<<<<< HEAD
+	  new_internal_node->node_slots[slot_idx].data_version  = node_slot->data_version;
+	  new_internal_node->node_slots[slot_idx].hash          = node_slot->hash;
+	  new_internal_node->node_slots[slot_idx].child         = std::move(node_slot->child);
+	=======
+7b1bfa186e84e619c01a55cbbb9e0c07|file:///root/workspace/pamir-framework/pamir/letus/fdmt/node.cc|439|1|V|cpp
+	>>>>>>> 94c6f321... tmp fix: old version read
+0ee50e9ac4fb72bc380d948f7d9ae543|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1013|1|V|cpp
+	      fdmt2::NibbleHash key;
+	      key.SetNibble(0, i);
+311f4c181eef1f04d2e3728d1140d94c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|546|58|v|cpp
+	<< " RootHash=" << root_hash.ToHex() 
+0bd746be5d0a4ed07ba8a7f633800fe8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1046|1|V|cpp
+	  fdmt2::NibbleHash key;
+	  key.SetNibble(0, 1);
+c8e19363e0d33e865125edf23f5aa2bc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1225|3|V|cpp
+	  std::string key = "key";
+	  key.resize(32);
+60a952d07cce8e9d8c68a8d88252966d|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1226|3|V|cpp
+	  key.SetNibble(0, 1);
+0cf31b2c283ce3431794586df7b0996d|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1230|3|V|cpp
+	    
+1138919295a28b20c0afbdf1e2c60e3b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1231|39|v|cpp
+	ToHex
+8c1d77111580f5d286f58d4226af70a6|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1269|5|V|cpp
+	    key[0] = uint8_t(i);
+c0d10e43a5879fdc1d519e6231f97822|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1269|33|v|cpp
+	ToHex(key)
+d77cd2cc5c2aba9460199ea822024b9d|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1317|6|V|cpp
+	      nibble_path_str[0] = uint8_t(i);;
+7ac850a8ad8a9751b20b5f38f89b3ea2|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1318|29|v|cpp
+	{nibble_path_str}
+bbc69d260986c4b95f04e585924848f6|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1231|1|V|cpp
+	      key.SetNibble(0, i);
+e6bd51c41efc0db8dedbdf2da2b70892|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1272|1|V|cpp
+	    key.SetNibble(, i);
+6c895cdcf866c162c1c10cd5a1ddb9f1|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1323|1|V|cpp
+	        key.SetNibble(0, i);
+	        key.SetNibble(1, j);
+	        fdmt2::NibblePath path = key.GetNibblePath(2);
+504a175f72abe2c528ee047218cd5d95|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1336|9|V|cpp
+	      nibble_path_str[0] = uint8_t(i);;
+	      fdmt2::NibblePath path{nibble_path_str};
+	
+b0ae2d049ff3b18a67f8a6a73f19de86|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1229|1|V|cpp
+	  for (size_t i = 0; i < 15; i++) {
+	    for (size_t j = 1; j < 3; j++) {
+	      key.SetNibble(0, i);
+	      key.SetNibble(1, j);
+	      std::cout << "Put key: " << key.ToDebugString() << std::endl;
+	      TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	    }
+	  }
+a0af2081b99a066a27ac74bf3a7ae5aa|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1230|5|V|cpp
+	    for (size_t j = 1; j < 3; j++) {
+f25076a24dd62a45e4fb9b6af330496f|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1229|1|V|cpp
+	  for (size_t i = 0; i < 16; i++) {
+	      key.SetNibble(0, i);
+	      key.SetNibble(1, 1);
+	      std::cout << "Put key: " << key.ToDebugString() << std::endl;
+	      TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	  }
+2684d2838109b38e9948819171a88851|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1325|1|V|cpp
+	    for (size_t i = 0; i < 15; i++) {
+	      for (size_t j = 1; j < 3; j++) {
+	        key.SetNibble(0, i);
+	        key.SetNibble(1, j);
+	        fdmt2::NibblePath path = key.GetNibblePath(2);
+	        TestMerkleWhiteBoxTestAddExpectPageStat(
+	            &expect_tree_stat /*expect_tree_stat*/, path /*nibble_path*/,
+	            1 /*base_page_count*/, 0 /*delta_page_count*/,
+	            0 /*mem_page_version*/, 0 /*mem_internal_node_count*/,
+	            1 /*mem_leaf_node_count*/, 0 /*mem_page_slot_count*/,
+	            0 /*mutable_version_count*/, 0 /*mutable_node_slot_count*/,
+	            0 /*mutable_page_slot_count*/, 0 /*mutable_leaf_node_count*/);
+	      }
+	    }
+034ebe3c13b7d9eda4b215a51ede3bb5|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1326|7|V|cpp
+	      for (size_t j = 1; j < 3; j++) {
+e82f3e56d2a6718da3f068e5e6f91343|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1336|7|V|cpp
+	      }
+fbd13bf259bb7fb7b7f5192a3b64ec8b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1325|1|V|cpp
+	    for (size_t i = 0; i < 15; i++) {
+	      key.SetNibble(0, i);
+	      key.SetNibble(1, 1);
+	      fdmt2::NibblePath path = key.GetNibblePath(2);
+	      TestMerkleWhiteBoxTestAddExpectPageStat(
+	          &expect_tree_stat /*expect_tree_stat*/, path /*nibble_path*/,
+	          1 /*base_page_count*/, 0 /*delta_page_count*/, 0 /*mem_page_version*/,
+	          0 /*mem_internal_node_count*/, 1 /*mem_leaf_node_count*/,
+	          0 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	          0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	          0 /*mutable_leaf_node_count*/);
+	    }
+42e739dd14b6625c6e6dda2ca3708270|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1321|1|V|cpp
+	    std::string nibble_path_str;
+	    nibble_path_str.resize(1);
+982af05991abde67655b2858d7ee875f|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1226|3|V|cpp
+	  key.SetNibble(1, 1);
+62e186486beb2811cd4eaa1e69c5f3a9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1225|1|V|cpp
+	  fdmt2::NibbleHash key;
+e296cd98804424814d8f544444b8c44b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1370|3|V|cpp
+	  MerkleTreeStat expect_tree_stat{};
+0b1c1cd46a58d47fae703ab47bf3c7bf|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1370|3|V|cpp
+	  for (size_t i = 0;i < 
+4996d5d5b7eee3ef323e72cf1cc4103e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1375|1|V|cpp
+	    std::cout << "Put: " << ToHex(key) << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key, "value_" + key);
+8349f63cd01ee7fc2bb71c5f41d68729|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1371|1|V|cpp
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 1);
+5ed37332a9014777d1b2590e42e077ef|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1373|1|V|cpp
+	    std::cout << "Put: " << key.ToDebugString() << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+939fe9148a313b77ac5a4e070d4104d1|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1419|1|V|cpp
+	    key.SetNibble(0, 15);
+0d0d11a17db9e761b121678e73c507d8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1416|3|V|cpp
+	  key[0] = uint8_t(31);
+8a6adc8897383e34680e4a2700c64d11|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1417|5|V|cpp
+	    key[1] = uint8_t(i);
+42d481976b7ff512de02702677d95c18|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1418|1|V|cpp
+	    key.SetNibble(1, 2);
+0a8da57f605d773826702cec70689e64|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1419|1|V|cpp
+	    key.SetNibble(3, i);
+bcea98941c6b12f38c873a5b4efcce6c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1417|1|V|cpp
+	    key.SetNibble(0, 15);
+	    key.SetNibble(1, 2);
+eab821d9e167260ffac2f83e86eff267|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1418|1|V|cpp
+	  for (size_t i = 0; i < 16; i++) {
+af5f2071ee35f9111f50325c7978c912|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1370|1|V|cpp
+	  for (size_t i = 0;i < 16; i++) {
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 1);
+	    std::cout << "Put: " << key.ToDebugString() << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	  }
+	  for (size_t i = 0; i < 15; i++) {
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 2);
+	    std::cout << "Put: " << key.ToDebugString() << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	  }
+553d0b260e21f2f9a74e1ab6d93a64af|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1416|1|V|cpp
+	  for (size_t i = 0;i < 16; i++) {
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 1);
+	    std::cout << "Put: " << key.ToDebugString() << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	  }
+	  for (size_t i = 0; i < 15; i++) {
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 2);
+	    std::cout << "Put: " << key.ToDebugString() << std::endl;
+	    TestWhiteBoxTestingPut(start_version, key.ToString(), "value1");
+	  }
+	  key.SetNibble(0, 15);
+	  key.SetNibble(1, 2);
+	  for (size_t i = 0; i < 16; i++) {
+	    for (size_t j = 1; j < 3; j++) {
+	      key.SetNibble(2, i);
+	      key.SetNibble(3, j);
+	      std::cout << "Put: " << key.ToDebugString() << std::endl;
+	      TestWhiteBoxTestingPut(start_version, key.ToString(), "value2");
+	    }
+	  }
+309feb7a34afaab620a5948dd4f67aca|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1489|1|V|cpp
+	    // leaf page L1
+9455932e1fc1944930fa5ac5516eb378|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1494|1|V|cpp
+	      TestMerkleWhiteBoxTestAddExpectPageStat(
+	          &expect_tree_stat /*expect_tree_stat*/, path /*nibble_path*/,
+	          1 /*base_page_count*/, 0 /*delta_page_count*/,
+	          0 /*mem_page_version*/, 0 /*mem_internal_node_count*/,
+	          1 /*mem_leaf_node_count*/, 0 /*mem_page_slot_count*/,
+	          0 /*mutable_version_count*/, 0 /*mutable_node_slot_count*/,
+	          0 /*mutable_page_slot_count*/, 0 /*mutable_leaf_node_count*/);
+0853949452043db6a14761d4c187b101|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1471|1|V|cpp
+	    fdmt2::NibblePath path = key.GetNibblePath(2);
+	    TestMerkleWhiteBoxTestAddExpectPageStat(
+	        &expect_tree_stat /*expect_tree_stat*/, path /*nibble_path*/,
+	        1 /*base_page_count*/, 0 /*delta_page_count*/, 0 /*mem_page_version*/,
+	        0 /*mem_internal_node_count*/, 1 /*mem_leaf_node_count*/,
+	        0 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	        0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	        0 /*mutable_leaf_node_count*/);
+f003d4cdb34f0ff7b414342c297e62ef|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1474|1|V|cpp
+	    fdmt2::NibblePath path = key.GetNibblePath(2);
+981eb0ff580c8800644c2fa69266386a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1469|5|V|cpp
+	    std::string nibble_hex = "01;
+081bd347a20e2acd533d13053d5d30d0|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1469|5|V|cpp
+	    nibble_hex[0] += i;
+5c1416b37889451ceb7257da52c9bc3e|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|182|5|V|cpp
+	    double sum = 0.0;
+ba5e5885f7ed9a3fb343508245ded3b7|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|182|5|V|cpp
+	    int i;
+a076a02f6e05b4c920db4fdd39765533|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|180|26|v|cpp
+	nibble_hex
+3eae41c45c0dc5d38a600990f2cdada3|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|182|5|V|cpp
+	    /* 为 num 个参数初始化 valist */
+ded3fb4b6ffb075fa93a45c8efeed4b1|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|183|5|V|cpp
+	    /* 访问所有赋给 valist 的参数 */
+7debac117158661114c08eb2a8e738f5|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|187|3|V|cpp
+	    /* 清理为 valist 保留的内存 */
+7f64341e71400fb306e01920e2354d10|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1048|25|v|cpp
+	std::vector<Nibble>{1}
+9f1a7a8d13f22dbb1fd21db59faf0fe8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1326|1|V|cpp
+	      fdmt2::NibblePath path = key.GetNibblePath(2);
+a127fd1f86e4ab650f2216f09992afa4|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1323|6|V|cpp
+	      
+52ff1d78227f00b646be2b8992d9547a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1326|32|v|cpp
+	key.GetNibblePath(2)
+ec09a51960f49a8707a7ccba7c0ea14e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1327|30|v|cpp
+	{i, 1}
+c805eb363373e33d066799f4773f257e|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|152|1|V|cpp
+	    for (auto& nibble : nibbles) {
+	      AppendNibble(nibble);
+	    }
+5f10b69c002aff1ff742c0a801a7eccc|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|71|5|V|cpp
+	    for (int idx = 0; i < nibbles
+27850f10b8ece3fcafde7cbdac71211e|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|73|7|v|cpp
+	AppendNibble
+5408f637ad1ce77b025e877f72b04b23|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1326|7|V|cpp
+	      std::vector<Nibble> key_hex = {i, 1};
+9f77e79eacf67e819f446ef8a9e7d270|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1326|7|V|cpp
+	      fdmt2::NibblePath path(key_hex);
+34e21a1a880e275a3dbd17483dc7cbdb|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1046|1|V|cpp
+	  fdmt2::NibbleHash key;
+	  key.SetNibbles({1});
+17febc1744309ef4293ccced3b3a2a5c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1228|1|V|cpp
+	    fdmt2::NibbleHash key;
+	    key.SetNibbles({i, 1});
+7aff694d8d68b2e19ae2c1d2fa17118b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1234|5|V|cpp
+	    key.SetNibble(0, i);
+	    key.SetNibble(1, 2);
+9072de9387b57cfb36aa22d3d77880da|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|70|1|V|cpp
+	  void SetNibbles(std::vector<Nibble> nibbles) {
+	    size_t idx = 0;
+	    for (auto& nibble : nibbles) {
+	      SetNibble(idx, nibble);
+	      idx++;
+	    }
+	  }
+	
+d68da1894c575364523d048cdb3bcc85|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1234|1|V|cpp
+	    fdmt2::NibbleHash key;
+	    key.SetNibbles({i, 2});
+3add33db645615b3e8280c9b2db07060|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1322|5|V|cpp
+	      key.SetNibble(0, i);
+	      key.SetNibble(1, 1);
+275b6957dda5cb230e68c17c0b5163ac|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1322|1|V|cpp
+	      fdmt2::NibbleHash key;
+	      key.SetNibbles({0, i});
+0f306cf81e98b652b27af83eca027ce9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1334|1|V|cpp
+	      key.SetNibble(0, i);
+	      key.SetNibble(1, 2);
+00beae98f8fee99ba8cfcf5c351181f6|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1334|1|V|cpp
+	      fdmt2::NibbleHash key;
+	      key.SetNibbles({i, 2});
+bcb7caaac73ffd411c697e0c245302bf|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1325|37|v|cpp
+	= key.GetNibblePath(2
+4bf26395801dcda2362105efd320c5db|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1321|10|v|cpp
+	size_t
+53098cfba0927d69522d74f069b9b3fd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|1|v|cpp
+	    for (s
+0b8ba2cb127d1b005a58e547a0304a40|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i < 32; i++) {
+3e9d5e28e41b0ca1f31673239a3869e3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i < 32; i+
+830642dd17577b3b6313f7fb10ca6dbc|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i < 32; i
+04ed0ac8b7404c781fc7e8cc3e7ebf8c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i < 32;
+3ed24704e4c05c98996828d9d19c7419|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i < 3
+11c4b9dd6f9e761f313338fcbaf19c07|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i <
+483d85636b968e2b1ef39bf163a0105c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0; i
+0f24fe31d5923975d34dfa171d16db2e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t j = 1; j
+a5c17ba3682ae861951e9472aae9f8fd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0;
+9e7df7b864ad9870c854514f67376f14|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i = 0
+01df94c235468dbadab7945d90a67bb3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i =
+e82baab4aac92d807f31cb754f170ab9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i
+f213ab7dc71ffb78110ff72656c06f63|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1534|10|v|cpp
+	size_t i 
+c8443c4746edfaf65b54bd6bac79227d|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1325|1|V|cpp
+	      std::vector<Nibble> nibble{i, 1};
+	      fdmt2::NibblePath path(nibble);
+b5620b1fbd889bc887561cf4820cc880|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1360|1|V|cpp
+	#if 0
+0a925a8faf605718cc7d831c9ec53de3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1417|3|V|cpp
+	  key.SetNibble(1, 2);
+d5838a27c231b2ddf86f5b60abe4b8b7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1414|1|V|cpp
+	  fdmt2::NibbleHash key;
+	  key.SetNibbles({15, 2});
+6a58ce816be7c61e10c59e39d1abc42e|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1418|1|V|cpp
+	      key.SetNibble(2, i);
+	      key.SetNibble(3, j);
+bcd05974cbdb52bc91df46bf7589ebde|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1465|1|V|cpp
+	    fdmt2::NibblePath path;
+	    path.FormNibbleHex({i, 1}, 2);
+d42875dd4e7f4448406b4a750f6f01c0|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1467|1|V|cpp
+	    key.SetNibble(1, 1);
+3f89d67d30baca47b867c3d3b1f888de|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1495|7|V|cpp
+	      key.SetNibble(3, j);
+29a3c7e9978783ea18daa1d994039f78|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1488|7|V|cpp
+	  key.SetNibble(0, 15);
+	  key.SetNibble(1, 2);
+027201db1a2b75bb7e4341febd29badd|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1500|1|V|cpp
+	      std::cout << "Put: " << key.ToDebugString() << std::endl;
+	      TestWhiteBoxTestingPut(start_version, key.ToString(), "value2");
+88ff415b059405e2a86244d4b97d0dde|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1520|5|V|cpp
+	    // leaf page L2
+21204cf2e85bf81f2ef2da1fd33aa232|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|1504|1|V|cpp
+	    // leaf page L1
+	    for (uint8_t i = 0; i < 31; i++) {
+	      nibble_path_str[0] = uint8_t(i);;
+	    }
+	    {
+	      nibble_path_str = "";
+	      nibble_path_str.resize(1);
+	      nibble_path_str[0] = uint8_t(31);
+	      fdmt2::NibblePath path{nibble_path_str};
+	      TestMerkleWhiteBoxTestAddExpectPageStat(
+	          &expect_tree_stat /*expect_tree_stat*/, path /*nibble_path*/,
+	          1 /*base_page_count*/, 0 /*delta_page_count*/, 1 /*mem_page_version*/,
+	          17 /*mem_internal_node_count*/, 0 /*mem_leaf_node_count*/,
+	          32 /*mem_page_slot_count*/, 0 /*mutable_version_count*/,
+	          0 /*mutable_node_slot_count*/, 0 /*mutable_page_slot_count*/,
+	          0 /*mutable_leaf_node_count*/);
+	    }
+	    nibble_path_str = "";
+	    nibble_path_str.resize(2);
+	    nibble_path_str[0] = uint8_t(31);
+	    for (uint8_t i = 0; i < 32; i++) {
+	      nibble_path_str[1] = uint8_t(i);;
+	      fdmt2::NibblePath path{nibble_path_str};
+	    }
+e2a3307dd8a12a0b820132b2c1c27819|file:///root/workspace/pamir-framework/pamir/letus/fdmt/common.h|178|3|v|cpp
+	explicit
+21d205bb5d9f338eae1d07ff5a676ef3|file:///root/.tmux.conf|67|1|V|tmux
+	# set -g status-bg black
+	# set -g status-fg white
+eb67a965658d828ee8a403625ab93e3a|file:///root/.tmux.conf|43|1|V|tmux
+	set -g status-bg default
+	#set -g status-fg red
+a378f3c457652967dd37e2e764f83338|file:///root/.tmux.conf|74|1|V|tmux
+	# set-option -g status-left '#[bg=black,fg=green][#[fg=cyan]#S#[fg=green]]'
+	# set-option -g status-left-length 20
+2ed33f70f7b39ae2e23dbbbd06894927|file:///root/.tmux.conf|55|1|V|tmux
+	set -g status-left "#[fg=yellow,bold]>>>><#S> "
+de3d9d6da2858b197d18ddc54bda0adc|file:///root/.tmux.conf|53|1|V|tmux
+	set -g status-left-length 40
+68d6c5b8cac51a8308a83c7314c15892|file:///root/.tmux.conf|53|1|V|tmux
+	set -g status-left-length 40
+	# 设置状态栏显示内容和内容颜色  显示session name
+	set -g status-left "#[fg=yellow,bold]>>>><#S> "
+897365e3aa3316d95224d8aa91d19b93|file:///root/.tmux.conf|74|1|V|tmux
+	# # 对齐方式
+	# set-option -g status-justify centre
+	#
+	# # 左下角
+0396ed1a1f9cffe209a0c289208e00e3|file:///root/.tmux.conf|80|1|V|tmux
+	# # 右下角
+	# set -g status-right '#[fg=green][#[fg=cyan] CPU: #{cpu_icon} #{cpu_percentage} | %H:%M %Y-%m-%d #[fg=green]]'
+	set -g status-right "#[fg=red,bold]Caps<#(xset q |grep Caps |awk '{print $4}')>#[fg=green,bold] Sys<#(tmux-mem-cpu-load -i 5 -g 0 -m 0 -t 0 -a 0)> #[fg=##4E9AB3,bold]%Y-%m-%d %H:%M:%S"
+591c28333fdcfc83883671f09cca73bb|file:///root/.tmux.conf|71|1|V|tmux
+	# # 状态栏
+	# # 颜色
+	#
+	#
+496bf61c829d845ca5bbc046db93cdc7|file:///root/.tmux.conf|62|1|V|tmux
+	# 窗口信息左对齐
+164ae0304d3cdfbca7dc0047a62e7bd9|file:///root/.tmux.conf|92|1|V|tmux
+	set -g @plugin 'seebi/tmux-colors-solarized'
+9b20d672d6fdc17f93080acbd2b5f752|file:///root/.tmux.conf|91|1|V|tmux
+	#solarized
+884cb9e572aed10cfae4c8d7a8b325d5|file:///root/.tmux.conf|86|1|V|tmux
+	# set -g @colors-solarized '256'
+	# set -g @plugin 'tmux-plugins/tmux-net-speed'
+b67833cdae7e30049e48a949e7f426b1|file:///root/.tmux.conf|89|1|V|tmux
+	set -g @plugin 'tmux-plugins/tmux-cpu'
+f2d4a6628507e5dd0e14a2d9cdb65dae|file:///root/.tmux.conf|62|35|v|tmux
+	#($TMUX_PLUGIN_MANAGER_PATH/tmux-mem-cpu-load/tmux-mem-cpu-load
+8fdf34f3000b36f48ec601a678d1aded|file:///root/.tmux.conf|61|101|v|tmux
+	#(tmux-mem-cpu-load
+cb52b4120afbeaed0be56806720bce1b|file:///root/.tmux.conf|60|30|v|tmux
+	，依次为capslock状态 , 内存, cpu , 时间
+	
+59f2fd31ac1a8178af65445837bf7f23|file:///root/.tmux.conf|60|30|v|tmux
+	，依次为capslock状态 , 内存, cpu , 时间
+53e8417c06033ee49a84cee3edfb49df|file:///root/.tmux.conf|61|133|v|tmux
+	#[fg=##4E9AB3,bold][ %Y-%m-%d %H:%M:%S ]
+3dde5b0e513dcde913f9b2d5fb379952|file:///root/.tmux.conf|54|90|v|tmux
+	%Y-%m-%d
+012945ea78bf73e2b19a5d5b5829b0eb|file:///root/.tmux.conf|54|61|v|tmux
+	#[fg=green]]
+6d976ba70686cc03a4aaaf444a12c68d|file:///root/.tmux.conf|54|28|v|tmux
+	#[bg=black,fg=green][
+50002d7c95fae9f02ec261da31816129|file:///root/.tmux.conf|54|74|v|tmux
+	#[fg=green,bold]%Y-%m-%d %H:%M:%S
+88a0e6e2d038939eeb0cfc53b2954bc2|file:///root/.tmux.conf|62|1|V|tmux
+	set -g status-right "#[fg=green]#($TMUX_PLUGIN_MANAGER_PATH/tmux-mem-cpu-load/tmux-mem-cpu-load --colors --powerline-right --interval 2)#[default]"
+56581e3c5df4ab1c0977b4ad2da95599|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|593|3|V|cpp
+	  TestRandom random_;
+1226458fb1195ea3b7bad16c214bc8ff|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|897|49|v|cpp
+	random_
+cafeab8172ebb59612c37a431eb9a3bb|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|905|1|v|cpp
+	
+	    uint64_t page_idx = random_.RandInt(0, 3);
+d5b5e51e41bddc772302b605d69946a7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|1|v|cpp
+	    uint64_t page_idx = r
+f207143830a04b3a48105e33aa806737|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|2|v|cpp
+	   uint64_t page_idx = r
+6bd7821701b325b527ed7613857a072c|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|3|v|cpp
+	  uint64_t page_idx = r
+d8c35cedb3d34137a2ffceb6b34469b3|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|4|v|cpp
+	 uint64_t page_idx = r
+5f0499bf51fba9a5d9818803d6b5db26|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|5|v|cpp
+	uint64_t page_idx = r
+0e6761d2b22282c701db8c7aa95e1e24|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|6|v|cpp
+	int64_t page_idx = r
+be8109046dc69c7492c75f65465adcc4|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|7|v|cpp
+	nt64_t page_idx = r
+4c3215571cedc9924017936062279ef8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|8|v|cpp
+	t64_t page_idx = r
+a11356a0e2b544ea2ec7fd8e65716fe7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|9|v|cpp
+	64_t page_idx = r
+ec210fa8e701199a4856e564ff8b94a5|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|10|v|cpp
+	4_t page_idx = r
+47e4d352bbc04d46092a3ee101916378|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|11|v|cpp
+	_t page_idx = r
+e8cf865abec95c44d40d736dc5f25f1a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|12|v|cpp
+	t page_idx = r
+8d34424d2d52dc32fbbb7846a26f3017|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|13|v|cpp
+	 page_idx = r
+eb5b2151edcf4822465551ed5486292a|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|14|v|cpp
+	page_idx = r
+7dc03bbfbccb80f7b39ec633e5c440e1|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|15|v|cpp
+	age_idx = r
+4f08d1f0005b34f5de1a6f7f28821a05|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|16|v|cpp
+	ge_idx = r
+007221bda498f13f9d997497bb6c8ad0|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|17|v|cpp
+	e_idx = r
+73afbd092eabbe4400064f8b8287d8bb|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|18|v|cpp
+	_idx = r
+4b059e5caeaef600c6e3940195fb9b70|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|19|v|cpp
+	idx = r
+e5500e35f08450e43a7bf22ec620aaa7|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|20|v|cpp
+	dx = r
+4b64031b5b180e20a384399490185cfb|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|21|v|cpp
+	x = r
+d7d34d9e9eb5421bdd1dbed1235fade9|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|22|v|cpp
+	 = r
+3d1ba181981456fda107289a0562f655|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|23|v|cpp
+	index_test_value_len = r
+b1e4cb4adcc930188665f5cccb9821af|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|24|v|cpp
+	ndex_test_value_len = r
+a20ac6c91596c52e146733376d2d84a8|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	dex_test_value_len = r
+aebcf78f9704968d615ed3cc2d1c486d|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	ex_test_value_len = r
+b030ede244122e8d67375eac7fcce667|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	x_test_value_len = r
+34d1c35063280164066ecc517050da0b|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	rand
+2ff39931e83a6a1f9bd6f0ba848ead00|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	rando
+7ddf32e17a6ac5ce04a8ecbf782ca509|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	random
+11b71c739581de999b2e58c87d736afa|file:///root/workspace/pamir-framework/pamir/letus/test/merkle_index_test.cc|906|25|v|cpp
+	st_overwrite_ratio = r
+7280d00f0b80e11624655d9126874c14|file:///root/.config/nvim/init.vim|6|1|V|vim
+	let g:root_path = $HOME . '/.config/nvim'
