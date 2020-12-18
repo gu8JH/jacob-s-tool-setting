@@ -30,7 +30,10 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
+" 标签显示
+Plug 'kshenoy/vim-signature'
+" 注释
+Plug 'preservim/nerdcommenter'
 " 底栏
 " Plug 'itchyny/lightline.vim'
 " 强化f和F键
