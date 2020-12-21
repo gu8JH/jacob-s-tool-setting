@@ -3,7 +3,7 @@ Plug 'pseewald/vim-anyfold'
 " 显示清除尾部空格
 Plug 'ntpeters/vim-better-whitespace'
 " 代码补全插件
-Plug 'mileszs/ack.vim'
+" Plug 'mileszs/ack.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -48,17 +48,18 @@ Plug 'easymotion/vim-easymotion'
 Plug 'liuchengxu/vista.vim'
 " coc插件列表，可根据需要进行删减
 let g:coc_global_extensions = [
-      \ 'coc-prettier',
-      \ 'coc-vimlsp',
-      \ 'coc-xml',
-      \ 'coc-yank',
       \ 'coc-clangd',
       \ 'coc-json',
-      \ 'coc-lists',
       \ 'coc-git',
-      \ 'coc-todolist',
       \ 'coc-translator',
       \ ]
+
+      " \ 'coc-vimlsp',
+      " \ 'coc-prettier',
+      " \ 'coc-todolist',
+      " \ 'coc-yank',
+      " \ 'coc-xml',
+      " \ 'coc-lists',
 " 显示剪切板
 Plug 'junegunn/vim-peekaboo'
 " 快速选择
